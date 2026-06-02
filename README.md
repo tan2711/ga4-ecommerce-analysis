@@ -141,3 +141,70 @@ The following cleaning and transformation steps were performed:
 
 ### SQL Query: Data Analysis 
 ### Data Visualization: Tableau 
+
+# Purchase Funnel Analysis
+
+The purchase funnel tracks how users move through the buying journey: view an item, add it to the cart, start checkout, and finally purchase.
+
+
+<img width="962" height="198" alt="image" src="https://github.com/user-attachments/assets/b35be31e-ab8e-42ad-9d9f-aaac538ff925" />
+
+
+Out of 22,145 users who viewed a product, only 1,284 completed a purchase showing the overall conversion rate as 5.8%. The biggest drop-off happens after people add items to their cart but before they start checkout, where user count drops by 54.4%. 
+
+Then, from checkout to purchase, the drop-off was 58.8% so only 1,284 of the 3,117 users who started checkout actually completed their purchase. That points to a serious abandonment problem in the final stage.
+
+These findings suggest that optimizing the checkout process could improve conversion rates and increase overall revenue.
+
+---
+
+# Product Analysis
+
+Products were evaluated based on total revenue, quantity sold, and unique buyers.
+
+
+<img width="962" height="318" alt="image" src="https://github.com/user-attachments/assets/8cc9e262-185c-4b58-a0fb-da604af7b404" />
+
+
+The Google Zip Hoodie F/C is the top product, bringing in $13,788 in revenue from 273 sold units and 218 unique buyers. The Google Crewneck Sweatshirt Navy ranked second with $10,714, and the Google Men's Tech Fleece Grey generated $9,964 even though it sold fewer units than several other products.
+
+The Super G Unisex Joggers had the highest sales volume at 308 units, but only ranked fifth in revenue with $9,548. That can be due to lower average selling price compared to other top performers.
+
+A small group of products make up most of the total revenue making them key drivers of overall business performance. The top 10 products alone brought in over $85,000. Most of these top products attracted between 45 and 221 unique buyers, which shows a steady demand across different customer segments.
+
+---
+
+# Traffic Source Analysis
+
+To figure out how well each channel is performing, revenue generation was analyzed across all traffic sources.
+
+<img width="368" height="490" alt="image" src="https://github.com/user-attachments/assets/7a6fe785-8395-4168-8ad7-079d9ebf71f4" />
+
+
+Google was the top revenue driver, bringing in $104.8K from 117.5K users since search traffic tends to attract people ready to buy. Direct traffic performed well too, generating $79.7K from 1,251 purchases, showing signs of solid brand awareness and repeated visitors.
+
+The "Data Deleted" segment had only 17.9K users but still brought in over $50K in revenue. That's a much higher revenue per user than other sources, however because the original acquisition source is unavailable, this revenue cannot be attributed to a specific marketing channel.
+
+Overall, revenue is concentrated among a few key sources. Google, Direct, and Others make up most sales, meaning our acquisition efforts depend heavily on a limited set of channels.
+
+
+---
+
+# Geographic Revenue Analysis
+
+Customer purchases were analyzed by country.
+
+<img width="1279" height="604" alt="image" src="https://github.com/user-attachments/assets/d407624e-8d6d-4f61-afd6-899abf3cdfda" />
+
+
+
+
+---
+
+# Device Performance Analysis
+
+Customer behavior was analyzed across device categories.
+
+<img width="944" height="490" alt="image" src="https://github.com/user-attachments/assets/e12d86c5-5297-4f76-9f3e-1a3d4a38999b" />
+
+
