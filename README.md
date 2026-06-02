@@ -1,4 +1,4 @@
-# Google Data Analytics Capstone: Revenue Pricing & Profitability Analysis
+# Google Data Analytics Capstone: Revenue Analysis
 
 **Course:** Google Data Analytics Professional Certificate – Capstone Project
 
@@ -9,8 +9,8 @@ In this capstone project, I analyzed customer behavior using Google Analytics 4 
 ## Quick Links
 
 - [Google Data Analytics Professional Certificate](https://www.coursera.org/learn/google-data-analytics-capstone)
-- [Google Analytics 4 E-commerce Dataset](LINK)
-- [Tableau Dashboard](LINK)
+- [Google Analytics 4 E-commerce Dataset](https://support.google.com/analytics/answer/7586738#zippy=%2Cin-this-article)
+- [Tableau Dashboard](https://public.tableau.com/views/GoogleAnalytics4GA4E-commerceDataRevenueAnalysis/Sheet5?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 - [SQL Queries](LINK)
 
 ### Data Source
@@ -32,9 +32,9 @@ Tableau
 
 ## Business Context
 
-E-commerce websties tend to generate tons of customer interaction data on a daily basis. Understanding how visitors move through the customer journey from viewing products to completing purchases is essential for being able to improve conversion rates and as a result maximize revenue.
+E-commerce websites tend to generate tons of customer interaction data on a daily basis. Understanding how visitors move through the customer journey from viewing products to completing purchases is essential for being able to improve conversion rates and as a result maximize revenue.
 
-By analyzing customer interactions and transaction data, the business can make better decisions to improve marketing performance and driving up revenue. Thats why the company wants to better understand the following:
+By analyzing customer interactions and transaction data, the business can make better decisions to improve marketing performance and drive up revenue. Thats why the company wants to better understand the following:
 * Where customers drop off during the purchasing process ?
 * Which products bring in the most revenue ? 
 * Which countries contribute the most to sales ?
@@ -100,7 +100,7 @@ BigQuery was used to explore, clean, and analyze the Google Analytics 4 e-commer
 
 ## Reason
 
-The dataset contains thousands of event-level records generated from user interactions across an e-commerce website. I made use of BigQuery because it efficiently handles large datasets and allows complex SQL queries to be executed perfectly in very little time.
+The dataset contains thousands of event-level records generated from user interactions across an e-commerce website. I made use of BigQuery because it efficiently handles large datasets and allows complex SQL queries to be executed quickly in very little time.
 
 ## Data Exploration
 
@@ -123,7 +123,7 @@ The event_name field contains multiple event types, including:
 
 The analysis focused on the following key e-commerce events: view_item, add_to_cart, begin_checkout, purchase
 
-Missing values query was run in important columns like transaction_id, purchase_revenue, item_name, country, and device_category.Duplicate transaction records were also checked using transaction_id to make sure that the purchases were not counted multiple times when totaling the revenue. Though, no significant data quality issues were identified that would impact the analysis.
+Missing values query was run on important columns like transaction_id, purchase_revenue, item_name, country, and device_category. Duplicate transaction records were also checked using transaction_id to make sure that the purchases were not counted multiple times when totaling the revenue. However, no significant data quality issues were identified that would impact the analysis.
 
 
 ## Data Cleaning
@@ -150,7 +150,7 @@ The purchase funnel tracks how users move through the buying journey: view an it
 <img width="962" height="198" alt="image" src="https://github.com/user-attachments/assets/b35be31e-ab8e-42ad-9d9f-aaac538ff925" />
 
 
-Out of 22,145 users who viewed a product, only 1,284 completed a purchase showing the overall conversion rate as 5.8%. The biggest drop-off happens after people add items to their cart but before they start checkout, where user count drops by 54.4%. 
+Out of 22,145 users who viewed a product, only 1,284 completed a purchase, showing the overall conversion rate as 5.8%. The biggest drop-off happens after people add items to their cart but before they start checkout, where user count drops by 54.4%. 
 
 Then, from checkout to purchase, the drop-off was 58.8% so only 1,284 of the 3,117 users who started checkout actually completed their purchase. That points to a serious abandonment problem in the final stage.
 
@@ -192,19 +192,42 @@ Overall, revenue is concentrated among a few key sources. Google, Direct, and Ot
 
 # Geographic Revenue Analysis
 
-Customer purchases were analyzed by country.
+Analysis of user volume, purchase activity, and revenue were done to identify the most valuable markets.
 
 <img width="1279" height="604" alt="image" src="https://github.com/user-attachments/assets/d407624e-8d6d-4f61-afd6-899abf3cdfda" />
 
 
+The United States was the dominant market by a wide margin, generating $160.6K in revenue from 118.5K users and 2,481 purchases.
+
+India and Canada emerged as strong secondary markets, ranking second and third with $35.0K and $32.8K respectively. They together accounted for a good share of international sales outside the US.
+
+Revenue was heavily concentrated in a few countries mainly the top three so the US, India, Canada. They drove the majority of total sales showing the store attracted a global customer base, with purchases and revenue coming from North America, Europe, and Asia.
 
 
 ---
 
 # Device Performance Analysis
 
-Customer behavior was analyzed across device categories.
+Device performance analysis done by looking at user volume, purchases, and revenue to see how customer behaviour differs across platforms.
 
 <img width="944" height="490" alt="image" src="https://github.com/user-attachments/assets/e12d86c5-5297-4f76-9f3e-1a3d4a38999b" />
+
+Desktop came first, bringing in $208.8K from 3,226 purchases. Mobile wasn't far behind, contributing $146.8K from 2,355 purchases which is a clear evidence that mobile users are actively buying and not just browsing.
+
+Desktop and mobile together accounted for nearly all user activity and revenue as shown in the visualization. Tablets, on the other hand, played a minor role with only $6.6K in revenue from 111 purchases.
+
+Interestingly, desktop users completed more purchases and generated higher revenue than mobile users, suggesting that while people shop both, they're more likely to finalize purchasing a desktop.
+
+
+# Act
+
+| Finding | Business Action |
+|---------|----------------|
+| Only 1,284 of 22,145 product viewers completed a purchase, with the biggest drop‑off at checkout | Set up automated abandoned‑cart emails targeting users who leave items in their cart. Offer a small incentive like free shipping or a limited‑time discount to encourage them to complete the purchase |
+| Top 10 products generated over $85K making them key sales drivers. | Put these products on the homepage, in email newsletters, and bundle them with related items (e.g., hoodie + socks). This increases average order value and maximizes revenue from best sellers |
+| Google ($104.8K) and Direct ($79.7K) delivered most revenue | Invest in Google Ads and SEO, and keep nurturing direct traffic through brand loyalty. At the same time, test small budgets on new channels like social media, affiliate etc to reduce dependence on just two sources |
+| India ($35K) and Canada ($32.8K) top markets outside the US | Run country‑specific promotions, like Diwali sales for India. Translate key marketing materials and consider local payment methods to boost conversions in these regions |
+| Mobile revenue which is $146.8K trails $208.8K revenue incurred from desktop | Simplify the mobile checkout process by reducing form fields and ensuring payment buttons are easy to use. Run A/B tests on mobile page load speed and button placement to remove any kind of friction |
+
 
 
