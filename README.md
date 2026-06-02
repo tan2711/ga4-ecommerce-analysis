@@ -11,7 +11,7 @@ In this capstone project, I analyzed customer behavior using Google Analytics 4 
 - [Google Data Analytics Professional Certificate](https://www.coursera.org/learn/google-data-analytics-capstone)
 - [Google Analytics 4 E-commerce Dataset](https://support.google.com/analytics/answer/7586738#zippy=%2Cin-this-article)
 - [Tableau Dashboard](https://public.tableau.com/views/GoogleAnalytics4GA4E-commerceDataRevenueAnalysis/Sheet5?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
-- [SQL Queries](LINK)
+- [SQL Queries](https://github.com/tan2711/ga4-ecommerce-analysis/blob/main/GA4%20SQL%20queries.sql.sql)
 
 ### Data Source
 
